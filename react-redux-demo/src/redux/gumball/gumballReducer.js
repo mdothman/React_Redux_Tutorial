@@ -8,7 +8,7 @@ const gumballReducer = (state = initialGumballState, action) => {
     switch(action.type){
         case BUY_GUMBALL: return{
             ...state,
-            numOfGumballs:state.numOfGumballs - 1
+            numOfGumballs:state.numOfGumballs - action.payload
         }
         default: return state
     }
