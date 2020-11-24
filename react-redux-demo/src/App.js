@@ -6,11 +6,15 @@ import CakeContainer from './componenets/CakeContainer';
 import HooksCakeContainer from './componenets/hooksContainer';
 import IceCreamContainer from './componenets/IceCreamContainer';
 import GumballContainer from './componenets/GumballContainer';
+import ItemContainer from './componenets/ItemContainer';
 
 function App() {
   return (
     <Provider store={store}>
         <div className="App">
+      <ItemContainer cake />
+      <ItemContainer gumball/>
+      <ItemContainer/>
       <CakeContainer />
       <HooksCakeContainer />
       <IceCreamContainer />
